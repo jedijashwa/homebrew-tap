@@ -1,6 +1,6 @@
 cask "pullmark" do
-  version "0.1.0"
-  sha256 "dcc1641479855c86a98a699b809ff172aee77d908d1d4cde3ae3033bcbd05a39"
+  version "0.1.1"
+  sha256 "4fd997d57fc1bdcb22ec6f1c773ba29d4ea17f789d05b25493bc13f0668a1930"
 
   url "https://github.com/jedijashwa/pullmark/releases/download/v#{version}/PullMark-#{version}.zip"
   name "PullMark"
@@ -10,12 +10,6 @@ cask "pullmark" do
   depends_on macos: ">= :ventura"
 
   app "PullMark.app"
-
-  caveats <<~EOS
-    PullMark is ad-hoc signed (not notarized). If macOS blocks the first
-    launch, right-click PullMark.app and choose Open, or allow it in
-    System Settings > Privacy & Security.
-  EOS
 
   zap trash: "~/Library/Preferences/app.pullmark.PullMark.plist"
 end
