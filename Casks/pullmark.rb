@@ -1,6 +1,6 @@
 cask "pullmark" do
-  version "0.24.0"
-  sha256 "6de1cb08b3ac2fbc460e5381f27aac8a8773decf4edc3d71f8aaf0c01c29740a"
+  version "0.25.0"
+  sha256 "a0303d189b0c33682ef29e9d9619fdfa7356b23c9d81630d2e3f5469843368c3"
 
   url "https://github.com/jedijashwa/pullmark/releases/download/v#{version}/PullMark-#{version}.zip"
   name "PullMark"
