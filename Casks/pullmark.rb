@@ -10,6 +10,8 @@ cask "pullmark" do
   depends_on macos: ">= :ventura"
 
   app "PullMark.app"
+  # The pullmark shell command ships inside the bundle (0.25.0+).
+  binary "#{appdir}/PullMark.app/Contents/Resources/pullmark"
 
   # Re-register the app and its Quick Look extension after every install and
   # upgrade: the delete-and-replace swap can drop the pluginkit registration,
