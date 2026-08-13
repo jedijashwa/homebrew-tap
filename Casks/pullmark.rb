@@ -7,7 +7,7 @@ cask "pullmark" do
   desc "Markdown viewer and rendered-diff reviewer for documentation-heavy GitHub PRs"
   homepage "https://github.com/jedijashwa/pullmark"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "PullMark.app"
   # The pullmark shell command ships inside the bundle (0.25.0+).
